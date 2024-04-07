@@ -1,0 +1,56 @@
+
+.navbar {
+            // background: linear-gradient(90deg, #393d96, #5f64ce);/
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0px 2px 4px #7f46e280; // Add bottom box shadow
+          }
+  
+  
+.navbar-nav {
+                
+             margin-right: auto; 
+         }
+
+.nav-link {
+                margin-right: 2rem; 
+                color: azure;
+                font-family: 'Playfair Display', serif;
+                font-size: larger;
+                font-weight: 500;
+            }
+
+.form-control {
+                 height: 3rem; 
+                margin-left: auto;
+                box-shadow: 4px  4px rgba(127, 70, 226, 0.5); // Add bottom box shadow
+               }
+
+ .navbar-brand{
+                font-family: 'Playfair Display', serif;
+                font-size: xx-large;
+                font-weight: 500;
+                padding: 3rem; // Increase padding to increase navbar height
+          }
+
+  @media (max-width: 992px) {
+            .navbar-nav {
+              flex-direction: column;
+              align-items: center; 
+            }
+          
+            .navbar-nav .nav-item {
+              margin-bottom: 1rem; 
+            }
+          }
+  .nav-item{
+    margin-right: 2rem; 
+    color: azure;
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+    font-weight: 500;
+
+  }
+  
+        
+         
+          

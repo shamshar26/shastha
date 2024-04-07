@@ -1,0 +1,53 @@
+.body{
+    background: linear-gradient(90deg,  #1f012a, #371843,#1f012a);
+}
+
+// .flat{
+//     border-radius: 10px;
+//     background: #e0e0e0;
+//     box-shadow:  23px 23px 35px #bebebe,
+//                  -23px -23px 35px #ffffff;
+// }
+
+.component-wrapper {
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #000000;
+    box-shadow: 0 0 10px #7f46e280;
+    // box-shadow:  23px 23px 35px #bebebe,
+    //              -23px -23px 35px #ffffff;
+}
+
+.container {
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .component-wrapper {
+        padding: 15px;
+    }
+
+    .col-md-4,
+    .col-lg-3 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+   
+
+}
+
+
+
+// div {
+//     width: 99vw; // Set the width of the div to 100% of the viewport width
+//     height: 100vh; // Set the height of the div to 100% of the viewport height
+//     overflow: hidden; // Ensure the image does not overflow the div
+// }
+
+// div img {
+//     width: 100%; // Make the image take up the full width of its container
+//     height: 100%; // Make the image take up the full height of its container
+//     //  object-fit: cover;// Ensure the image covers the entire container, maintaining aspect ratio
+//     // object-position: center; // Center the image within its container
+// }

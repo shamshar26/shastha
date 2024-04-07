@@ -1,0 +1,32 @@
+
+<p>list-country works!</p>
+<input type="text" placeholder="Search..." [(ngModel)]="searchQuery" (input)="applyFilter()">
+<h2>Country List</h2>
+<!-- <button class="btn btn-primary" routerLink="/country/add-country">Add Country</button> -->
+<table  matSort (matSortChange)="sortData($event)">
+  <thead>
+    <tr>
+      <th mat-sort-header="name">Name</th>
+      <th mat-sort-header="phoneCode">Phone Code</th>
+      <th mat-sort-header="sortname">Country Code</th>
+    </tr>
+  </thead>
+  @for (item of filteredData; track item.id){
+  <tbody>
+   
+    <tr>
+      <td>{{ item.name }}</td>
+      <td>{{ item.phoneCode }}</td>
+      <td>{{ item.sortname }}</td>
+    </tr>
+  </tbody>}
+</table>
+<mat-paginator  [length]="countries.length"
+[pageSize]="10"
+[pageSizeOptions]="[5, 10, 25, countries.length]"
+aria-label="Select page">
+</mat-paginator>
+
+
+
+

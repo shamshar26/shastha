@@ -1,0 +1,18 @@
+<p>dash6 works!</p>
+<div class="container">
+    <p>latest-comments works!</p>
+    
+    <div class="divider"></div>
+    
+    @for (item of data; track data) {
+        <section>
+            <img src="../../assets/images/{{item.profileImageSrc}}" alt="no image">
+            <div class="content">
+               <h6>{{item.username}}</h6>
+             <h6>{{item.comment | textLimit:25}}</h6>
+            </div>
+            <img src="../../assets/images/{{item.thumbnailSrc}}" alt="no image">
+        </section>
+        <div class="divider"></div>
+    }
+    </div>

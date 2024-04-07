@@ -1,0 +1,28 @@
+section{
+    display: flex;
+
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    img{
+        &:first-of-type{
+            width: 40px;
+             height: 40px;
+             border-radius: 50%;
+        }
+
+        &:last-of-type{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+
+    .content{
+        flex: 1 1 auto;
+        padding:0 0.5rem;
+
+        h6:first-child{
+            color: rgb(77, 92, 92);
+        }
+    }
+}

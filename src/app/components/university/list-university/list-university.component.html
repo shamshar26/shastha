@@ -1,0 +1,27 @@
+<p>list-university works!</p>
+
+<table>
+    <thead>
+      <tr>
+        <th>University Name</th>
+        <th>Country</th>
+        <th>Code</th>
+        <th>Domains</th>
+        <th>Web Pages</th>
+        
+    </tr>
+    </thead>
+    @for (item of university; track item.id){
+    <tbody>
+     
+      <tr>
+        <td>{{ item.name }}</td>
+        <td>{{ item.country }}</td>
+        <td>{{ item.alpha_two_code }}</td>
+        <td>{{ item.domains}}</td>
+        <td>{{ item.web_pages }}</td>
+        
+        
+      </tr>
+    </tbody>}
+  </table>
