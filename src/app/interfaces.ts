@@ -5,6 +5,7 @@ export interface IUniversity{
     web_pages: string[];
     alpha_two_code: string;
     name: string;
+    id:number;
     
 }
 

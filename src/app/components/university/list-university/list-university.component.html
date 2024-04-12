@@ -1,27 +1,50 @@
-<p>list-university works!</p>
-
-<table>
-    <thead>
-      <tr>
-        <th>University Name</th>
-        <th>Country</th>
-        <th>Code</th>
-        <th>Domains</th>
-        <th>Web Pages</th>
-        
-    </tr>
-    </thead>
-    @for (item of university; track item.id){
-    <tbody>
-     
-      <tr>
-        <td>{{ item.name }}</td>
-        <td>{{ item.country }}</td>
-        <td>{{ item.alpha_two_code }}</td>
-        <td>{{ item.domains}}</td>
-        <td>{{ item.web_pages }}</td>
-        
-        
-      </tr>
-    </tbody>}
-  </table>
+<div class="card-header">
+  <h2>University List</h2>
+  <input
+    type="text"
+    class="form-control"
+    id="search-university"
+    placeholder="Search..."
+    [(ngModel)]="searchQuery"
+    (input)="applyFilter()"
+  />
+</div>
+<div class="card">
+  <div class="table-wrapper">
+    <table matSort (matSortChange)="sortData($event)">
+      <thead>
+        <tr>
+          <th mat-sort-header="university">University Name</th>
+          <th mat-sort-header="country">Country</th>
+          <th mat-sort-header="code">Code</th>
+          <th mat-sort-header="domain">Domains</th>
+          <th mat-sort-header="web-pages">Web Pages</th>
+        </tr>
+      </thead>
+      @if(loading){
+      <tbody>
+        <tr>
+          <td colspan="5">Loading...</td>
+        </tr>
+      </tbody>
+      } @for (item of filteredData; track item.id){
+      <tbody>
+        <tr>
+          <td>{{ item.name }}</td>
+          <td>{{ item.country }}</td>
+          <td>{{ item.alpha_two_code }}</td>
+          <td>{{ item.domains }}</td>
+          <td>{{ item.web_pages }}</td>
+        </tr>
+      </tbody>
+      }
+    </table>
+  </div>
+  <mat-paginator
+    [length]="university.length"
+    [pageSize]="10"
+    [pageSizeOptions]="[5, 10, 25, university.length]"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+</div>

@@ -1,20 +1,38 @@
 
-
 <aside>
   @if (currentRoute.includes('country')){
-    <h4>Country</h4>
-    <ul>
-      <li [routerLink]="'/country/add-country'">Add Country</li>
-      <li [routerLink]="'/country'">List Country</li>
-    </ul>
+  <h4>Country</h4>
+  <ul>
+    <li>
+      <a [routerLink]="'/country/add-country'" [routerLinkActive]="'active'"
+        >Add Country</a
+      >
+    </li>
+    <li>
+      <a [routerLink]="'/country'" [routerLinkActive]="'active'"
+        >List Country</a
+      >
+    </li>
+  </ul>
   } @if (currentRoute.includes('university')){
-    <h4>University</h4>
-    <ul>
-      <li [routerLink]="'/university/add-university'">Add University</li>
-      <li [routerLink]="'/university'">List University</li>
-    </ul>
+  <h4>University</h4>
+  <ul>
+    <li>
+      <a
+        [routerLink]="'/university/add-university'"
+        [routerLinkActive]="'active'"
+        >Add University</a
+      >
+    </li>
+    <li>
+      <a [routerLink]="'/university'" [routerLinkActive]="'active'"
+        >List University</a
+      >
+    </li>
+  </ul>
   }
-  </aside>
+</aside>
+
  
   
  

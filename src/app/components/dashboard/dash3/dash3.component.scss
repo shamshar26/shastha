@@ -1,40 +1,46 @@
 
+.card {
+    max-height: 330px;
+    overflow: hidden; /* Ensure contents don't overflow */
 
-
-section{
-    display: flex;
-    gap:1rem;
-    margin-top: 1rem;
-
-    img{
-        width:40%;
-        height: 35%;
-    }
-
-    .content{
-        flex: 1 1 auto;
-    }
-    
-
-    .data{
+    section {
         display: flex;
-        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 1rem;
 
-        div{
+        img {
+            width: 20%;
+            height: 30px;
+            max-height: 150px; /* Adjust maximum height of the image */
+            object-fit: cover;
+        }
+
+        .content {
+            flex: 1 1 auto;
+        }
+
+        .data {
             display: flex;
-            align-items: center;
+            justify-content: space-between;
 
-            span{
-               font-size: 0.9rem; 
+            div {
+                display: flex;
+                align-items: center;
+
+                span {
+                    font-size: 0.9rem;
+                }
             }
         }
     }
 
+    h5,
+    span {
+        color: #333;
+    }
+
+    i {
+        color: rgb(54, 50, 54);
+    }
 }
 
-h5,span{
-    color: rgb(255, 255, 255);
-}
-i{
-    color: rgb(187, 80, 187);
-}

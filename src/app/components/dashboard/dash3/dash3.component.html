@@ -1,30 +1,31 @@
 
-
-
-
-
-@for (item of data; track data){
-<section>
-    <div class="container">
-     <img src="../../assets/images/{{item.imageSrc}}" alt="no image">
-     <div class="content">
-        <h5>{{item.videoTitle | textLimit:25}}</h5>
-        <div class="data">
-            <div class="views">
-                <i class="material-icons">equalizer</i>
-                <span>{{item.views}}</span>
-            </div>
-            <div class="comments">
-                <i class="material-icons">chat</i>
-                <span>{{item.comments}}</span>
-            </div>
-            <div class="likes">
-                <i class="material-icons">thumb_up</i>
-                <span>{{item.likes}}</span>
-            </div>
-        </div>
-     </div><br>
-     <div class="divider"></div>
+    <div class="card">
+        <!-- Loop through data -->
+        @for (item of data; track data){
+            <section>
+                <div class="container">
+                    <img src="../../assets/images/{{item.imageSrc}}" alt="no image">
+                    <div class="content">
+                        <h5>{{item.videoTitle | textLimit:25}}</h5>
+                        <div class="data">
+                            <div class="views">
+                                <i class="material-icons">equalizer</i>
+                                <span>{{item.views}}</span>
+                            </div>
+                            <div class="comments">
+                                <i class="material-icons">chat</i>
+                                <span>{{item.comments}}</span>
+                            </div>
+                            <div class="likes">
+                                <i class="material-icons">thumb_up</i>
+                                <span>{{item.likes}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </section>
+        }
     </div>
-</section>
-}
+    
+    

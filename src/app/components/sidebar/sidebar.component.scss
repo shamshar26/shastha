@@ -1,68 +1,40 @@
 
-aside{
-      // position:relative;
-    top: 0rem; // Adjust top position as needed
-    width: 15rem; // Adjust width as needed
-    border: 1px solid #360c65; // Adjust border as needed
-    height: calc(100vh - 10rem); // Adjust height as needed
-    background: linear-gradient(90deg, #360c65, #5f64ce);
 
-        ul {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0 0 0; 
-    
+aside {
+  top: 0rem; // Adjust top position as needed
+    width: 200px; // Adjust width as needed
+    height: calc(100vh - 126px);
+    border: 1px solid #d7d1d1;
+  background: #cb6e6e;
 
-      li {
-        padding: 1rem; // Adjust padding as needed
-        cursor: pointer;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+
+    li {
+      color: #333;
+      border-bottom: 1px solid #fcfafa;
+      a {
+        text-decoration: none; // Add underline to the links
+        color: #333; // Adjust link text color as needed
+        font-weight: 500;
+        display: block;
+        padding: 15px 40px; // Adjust padding as needed
         transition: background-color 0.3s, border 0.3s; // Adjust transition properties as needed
-        // flex: 1; // Make the list items equally spaced within the flex container
-        text-align: center; // Center the text horizontally
-
         &:hover {
-          background-color: #1b021f; // Adjust hover background color as needed
+          background-color: #e0f3ff; // Adjust hover background color as needed
         }
-
-        &.active {
-          background-color: #e3f2fd; // Adjust active background color as needed
-          border-left: 4px solid #2196f3; // Adjust active border color as needed
-        }
-
-        a {
-          text-decoration: none; // Add underline to the links
-          color: #fcfafa; // Adjust link text color as needed
-          font-family: 'Playfair Display', serif;
-          font-size: larger;
-          font-weight: 500;
-        }
-
+        
       }
     }
+  }
 }
 
-h4{
-  color: #e3f2fd;
-  padding: 2rem;
+h4 {
+  color: #333;
   margin-top: 1rem;
-  font-family: 'Playfair Display', serif;
-}
-
-ul::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #fcfafa; // Adjust line color as needed
-  margin-top: 30px; // Adjust distance between ul and line
-}
-
-li{
-  color: #fcfafa; // Adjust link text color as needed
-  font-family: 'Playfair Display', serif;
-  font-size: larger;
+  padding: 10px;
+  font-size: 18px;
   font-weight: 500;
-
 }
-
-
-

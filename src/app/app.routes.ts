@@ -14,11 +14,16 @@ import { ListUniversityComponent } from './components/university/list-university
 
 export const routes: Routes = [
 
-     {
+        {
           path: '',
-          redirectTo: '/country',
+          redirectTo: '/dashboard',
           pathMatch: 'full',
-        },
+       },
+       {
+          path: 'dashboard',
+          component: DashboardComponent,
+          pathMatch: 'full',
+       },
         {
           path: 'country',
           component: CountryComponent,
@@ -47,36 +52,7 @@ export const routes: Routes = [
             },
           ],
         },
-        {
-          path: 'dash',
-          component: DashboardComponent,
-        },
-//     { 
-//          path: 'add-country',
-//           component:AddCountryComponent
-//          },
-//     { 
-//          path: 'list-country',
-//            component:ListCountryComponent
-//     },
-
-//     { 
-//          path: 'university',
-//             component: UniversityComponent
-//      },
-
-//      { 
-//          path: 'add-university',
-//              component: AddUniversityComponent
-//      },
-
-//      { 
-//           path: 'list-university',
-//              component: ListUniversityComponent
-//      },
-
-        
-                     
-           
+     
+                    
    
 ];

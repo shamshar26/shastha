@@ -22,6 +22,7 @@ export class ListCountryComponent {
   // sortedData: ICountry[];
   filteredData: ICountry[] = [];
   searchQuery: string = '';
+  loading: boolean = true;
 
   constructor() {
     this.filteredData = this.countries.slice();
@@ -32,9 +33,8 @@ export class ListCountryComponent {
     this.httpService.getCountries().subscribe((result) => {
       console.log(result);
       this.countries = result.countries;
-      //  this.sortedData = this.countries.slice();
       this.getSlicedCountries();
-      // this.filteredData = this.filteredData.slice();
+      this.loading = false;
     });
   }
 

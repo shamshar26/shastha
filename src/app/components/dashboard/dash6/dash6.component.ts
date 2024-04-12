@@ -11,19 +11,25 @@ import { TextLimitPipe } from '../../../text-limit.pipe';
 export class Dash6Component {
   data = [
     {
-      profileImageSrc: 'pro-icon.jpg',
+      profileImageSrc: 'pro-icon.jpeg',
       username: 'test.username',
       comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
       thumbnailSrc: 'dp.jpg'
     },
     {
-      profileImageSrc: 'pro-icon.jpg',
+      profileImageSrc: 'pro-icon.jpeg',
       username: 'test.username',
       comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
       thumbnailSrc: 'dp.jpg'
     },
     {
-      profileImageSrc: 'pro-icon.jpg',
+      profileImageSrc: 'pro-icon.jpeg',
+      username: 'test.username',
+      comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+      thumbnailSrc: 'dp.jpg'
+    },
+    {
+      profileImageSrc: 'pro-icon.jpeg',
       username: 'test.username',
       comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
       thumbnailSrc: 'dp.jpg'

@@ -1,15 +1,12 @@
-// img{
-//     width: 650px;
-//     height: 400px;
-// }
 
-// @media (max-width: 768px) {
-//     img {
-//         max-width: 450px; /* Make the image fill the container width */
-//         height: auto; /* Maintain the aspect ratio */
-//     }
-// }
-img{
-    width: 100%;
-    height: 400px;
-}
+.card {
+  max-height: 310px; /* Set maximum height for the card */
+  overflow: hidden; /* Hide overflow content */
+
+ 
+  img {
+      max-height: 325px; /* Ensure the image doesn't exceed the height of the card */
+      width: 75%; /* Maintain aspect ratio */
+      display: block; /* Ensure proper rendering */
+      margin: 0 auto; /* Center the image horizontally */
+  }}
